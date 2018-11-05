@@ -1,0 +1,30 @@
+page-welcome{
+
+    .bg-image{
+      background-image: url('../assets/imgs/foodblur.jpg');
+      background-repeat: no-repeat;
+     // background-position: center top;
+      background-size: cover;
+    }
+   #welcome {
+    h1{
+      font-size: 60px;
+      margin-top:5px;
+      color:rgb(255, 255, 255);  
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    div{
+      color:white;
+      margin-top:40px;
+      font-size: 15px;
+    }
+
+    .marginTop{
+      margin-top:150px;
+    }
+
+    .scroll-content{overflow-y: hidden;}
+
+      }
+    }
