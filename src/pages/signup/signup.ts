@@ -35,6 +35,6 @@ export class SignupPage {
     console.log("Usuario: " + this.usuario);
     console.log("Contraseña: " + this.password);
 
-
+   // this.navCtrl.push(TabsPage);
   }
 }
