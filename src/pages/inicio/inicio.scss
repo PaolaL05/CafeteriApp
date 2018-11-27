@@ -1,7 +1,10 @@
 page-inicio {
 
-
-    
+    .bg-imageinicio{
+        background-image: url('../assets/imgs/maderisin.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     h1{
         font-family: 'Alice', serif;
         font-size: 40px;
