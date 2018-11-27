@@ -1,17 +1,17 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-menu [content] = "content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content padding>
-  <!-- <h1 align="center">CafeteríaApp!</h1>
-  <form class="login">
-    <h2 class="login-title" >Login</h2>
-    <input type="text" class="login-input" placeholder="Ingrese su código" autofocus>
-    <input type="password" class="login-input" placeholder="Contraseña">
-    <input type="submit" value="Entrar" class="login-button">
-  <p class="login-lost"><a href="">¿Olvidaste tu contraseña?</a></p>
-  </form>-->
+  <ion-content padding id="home" padding class="bg-imagehome">
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
-</ion-content>
+<ion-nav [root] = "rootPage" #content swipeBackEnabled="false"></ion-nav>

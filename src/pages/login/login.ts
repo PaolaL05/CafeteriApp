@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -23,5 +24,7 @@ export class LoginPage {
     console.log("Username: " + this.username);
 
     console.log("Password: " + this.password);
+
+    this.navCtrl.push(HomePage);
   }
   }

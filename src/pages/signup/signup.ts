@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { TabsPage} from '../tabs/tabs';
+//import { TabsPage} from '../tabs/tabs';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the SignupPage page.
  *
@@ -27,14 +28,14 @@ export class SignupPage {
   }
 
   signup(){
-    if(this.password.length==0 || this.nombre.length==0 || this.apellido.length==0)
+    /*if(this.password.length==0 || this.nombre.length==0 || this.apellido.length==0)
     alert("Por favor llena todo los campos.");
-
+*/
     console.log("Nombre: " + this.nombre);
     console.log("Apellido: " + this.apellido);
     console.log("Usuario: " + this.usuario);
     console.log("Contraseña: " + this.password);
 
-   // this.navCtrl.push(TabsPage);
+    this.navCtrl.push(HomePage);
   }
 }
